@@ -123,7 +123,7 @@ public class NewTelephoneCompanyTest_WBT {
 	}
 	
 	@Test
-	public void testComputeChargeDiscountedStart() {
+	public void testComputeChargeDiscountedStart() { 
 		ntc.setStartTime(0);
 		ntc.setDuration(60);
 		double expResult = 1248.00;
