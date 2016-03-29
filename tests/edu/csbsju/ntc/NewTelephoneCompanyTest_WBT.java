@@ -138,15 +138,15 @@ public class NewTelephoneCompanyTest_WBT {
 		assertTrue("A call starting at " + ntc.getStartTime() + " for a duration of " + ntc.getDuration()+ expResult,expResult==ntc.computeCharge());
 		ntc.setStartTime(1800);
 		ntc.setDuration(10);
-		expResult = 208.80;
+		expResult = 208.00;
 		assertTrue("A call starting at " + ntc.getStartTime() + " for a duration of " + ntc.getDuration()+ expResult,expResult==ntc.computeCharge());
 		ntc.setStartTime(1801);
 		ntc.setDuration(10);
-		expResult = 208.80;
-		assertTrue("A call starting at " + ntc.getStartTime() + " for a duration of " + ntc.getDuration()+ expResult,expResult==ntc.computeCharge());
+		expResult = 208.00;
+		assertTrue("A call starting at " + ntc.getStartTime() + " for a duration of " + ntc.getDuration(),expResult==ntc.computeCharge());
 		ntc.setStartTime(2359);
 		ntc.setDuration(10);
-		expResult = 208.80;
+		expResult = 208.00;
 		assertTrue("A call starting at " + ntc.getStartTime() + " for a duration of " + ntc.getDuration()+ expResult,expResult==ntc.computeCharge());
 	}
 	
